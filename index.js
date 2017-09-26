@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
  /* the item that will be passed through is a string*/
- var itemName = item;
+ var itemName = "";
  /*itemPrice should be randomly generated integer between 1 and 100 */
  var itemPrice = Math.floor(Math.random() * 100) + 1;
  /*create one key value pair - itemName:itemPrice */
@@ -22,8 +22,9 @@ function addToCart(item) {
 
  /* add items to cart */
  for(var i = 0; i < itemInfo.length; i++) {
-    itemInfo['itemName'] = 'itemPrice';
-   cart.push({itemName});
+
+    itemInfo[itemName] = 'itemPrice';
+   cart.push({itemInfo});
  }
 
 /* var itemInfo = [{}];

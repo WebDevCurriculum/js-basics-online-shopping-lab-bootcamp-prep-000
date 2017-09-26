@@ -9,33 +9,19 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
+function addToCart(itemName) {
  // write your code here
  /* the item that will be passed through is a string*/
- var itemName = "";
+var itemObject = {};
+var itemPrice = Math.floor(Math.random() * 100) + 1;
+itemObject[itemName] = itemPrice
  /*itemPrice should be randomly generated integer between 1 and 100 */
- var itemPrice = Math.floor(Math.random() * 100) + 1;
  /*create one key value pair - itemName:itemPrice */
- var itemInfo = [{
-   itemName:itemPrice
- }];
-
  /* add items to cart */
- for(var i = 0; i < itemInfo.length; i++) {
-
-    itemInfo[itemName] = 'itemPrice';
-   cart.push({itemInfo});
+    cart.push(itemObject);
+    console.log(`${itemName} has been added to your cart.`);
+    return cart;
  }
-
-/* var itemInfo = [{}];
-  itemInfo["item"] = "itemPrice";
-  /*for(var i = 0; i < itemInfo.length; i++) {
-    itemInfo.push(item); */
-  }
-    /* item is a string. How will you add the string to the object */
-
-
-
 
 function viewCart() {
   // write your code here

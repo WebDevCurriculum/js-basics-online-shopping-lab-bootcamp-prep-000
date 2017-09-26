@@ -1,6 +1,6 @@
 /*global afterEach, beforeEach, describe, it */
 
-beforeEach(function() {
+beforeEach(function() { 
   setCart([]);
 
   expect.spyOn(console, "log");

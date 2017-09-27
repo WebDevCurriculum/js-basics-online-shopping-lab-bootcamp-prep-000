@@ -28,18 +28,39 @@ function viewCart() {
   // write your code here
 /*price that is in existing cart */
 /* [{lemons:54}] */
+/* you don't want to "push" anything to the cart you want to display the contents of the existing cart */
+for(var i = 0; i < cart.length; i++) {
+var item = cart[i];
+debugger
+var itemName = Object.keys(item)[i];
+var itemPrice = item[itemName];
+}
   if(cart.length == 0) {
   console.log("Your shopping cart is empty.");
 }
-  else if(cart.length > 0){
-    var item = cart[0];
-    var itemName = Object.keys(item)[0];
-    var itemPrice = item[itemName];
+  else if(cart.length == 1){
     console.log(`In your cart, you have ${itemName} at $${itemPrice}.`);
   }
-
+  else if(cart.length ==2) {
+      console.log(`In your cart, you have ${itemName} at $${itemPrice} and ${itemName} at ${itemPrice}.`);
+  }
 }
 
+
+/*  var string = "In your cart, you have";
+  var subString1 = `${itemName} at $${itemPrice}.`;
+  var subString2 = "and";
+*/
+
+   /*if(cart.length == 1){
+
+      console.log(`In your cart, you have ${itemName} at $${itemPrice}.`)}
+    else if(cart.length == 2) {
+        console.log(`In your cart, you have ${itemName} at $${itemPrice} and ${itemName} at ${itemPrice}.`)
+      }
+    }
+}
+*/
 
 
 

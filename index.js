@@ -36,7 +36,7 @@ for(var i = 0; i < cart.length; i++) {
   var item = cart[i];
   var itemName = Object.keys(item)[i];
   var itemPrice = item[itemName];
-
+}
    if(cart.length == 1){
      console.log(`In your cart, you have ${itemName} at $${itemPrice}.`);
 }

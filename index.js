@@ -29,26 +29,22 @@ function viewCart() {
 /*price that is in existing cart */
 /* [{lemons:54}] */
 /* you don't want to "push" anything to the cart you want to display the contents of the existing cart */
+/*  if(cart.length == 0) {
+  console.log("Your shopping cart is empty."); */
+
+for(var i = 0; i < cart.length; i++) {
+  var item = cart[i];
+  var itemName = Object.keys(item)[i];
+  var itemPrice = item[itemName];
+
   if(cart.length == 0) {
-  console.log("Your shopping cart is empty.");
-}
-  else if(cart.length == 1){
-    for(var i = 0; i < cart.length; i++) {
-    var item = cart[i];
-    var itemName = Object.keys(item)[i];
-    var itemPrice = item[itemName];
-    console.log(`In your cart, you have ${itemName} at $${itemPrice}.`);
+    console.log("Your shopping cart is empty.");
   }
+  if(cart.length == 1){
+  console.log(`In your cart, you have ${itemName} at $${itemPrice}.`);
 }
   else if(cart.length == 2) {
-    for(var i = 0; i < cart.length; i++) {
-    var item1 = cart[0];
-    var itemName1 = Object.keys(item)[0];
-    var itemPrice = item1[itemName];
-    var item2 = cart[1];
-    var itemName1 = Object.keys(item)[1];
-    var itemPrice2 = item2[itemName];
-      console.log(`In your cart, you have ${itemName1} at $${itemPrice} and ${itemName2} at ${itemPrice2}.`);
+      console.log(`In your cart, you have ${itemName} at $${itemPrice} and ${itemName} at ${itemPrice}.`);
   }
 }
 }

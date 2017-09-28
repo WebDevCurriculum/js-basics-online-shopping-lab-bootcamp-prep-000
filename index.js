@@ -36,7 +36,7 @@ for(var i = 0; i < cart.length; i++) {
   var item = cart[i];
   var itemName = Object.keys(item)[i];
   var itemPrice = item[itemName];
-
+}
   if(cart.length == 0) {
     console.log("Your shopping cart is empty.");
   }

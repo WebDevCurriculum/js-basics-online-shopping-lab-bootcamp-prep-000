@@ -45,7 +45,7 @@ for(var i = 0; i < cart.length; i++) {
       console.log(`In your cart, you have ${itemName} at $${itemPrice} and ${itemName} at ${itemPrice}.`);
   }
 }
-}
+
 
 
 /*  var string = "In your cart, you have";
